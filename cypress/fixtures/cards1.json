@@ -1,0 +1,57 @@
+{
+  "success": true,
+  "deck_id": "my-deck-id",
+  "cards": [
+    {
+      "code": "2D",
+      "image": "https://deckofcardsapi.com/static/img/2D.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/2D.svg",
+        "png": "https://deckofcardsapi.com/static/img/2D.png"
+      },
+      "value": "2",
+      "suit": "DIAMONDS"
+    },
+    {
+      "code": "6H",
+      "image": "https://deckofcardsapi.com/static/img/6H.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/6H.svg",
+        "png": "https://deckofcardsapi.com/static/img/6H.png"
+      },
+      "value": "6",
+      "suit": "HEARTS"
+    },
+    {
+      "code": "KS",
+      "image": "https://deckofcardsapi.com/static/img/KS.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/KS.svg",
+        "png": "https://deckofcardsapi.com/static/img/KS.png"
+      },
+      "value": "KING",
+      "suit": "SPADES"
+    },
+    {
+      "code": "9S",
+      "image": "https://deckofcardsapi.com/static/img/9S.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/9S.svg",
+        "png": "https://deckofcardsapi.com/static/img/9S.png"
+      },
+      "value": "9",
+      "suit": "SPADES"
+    },
+    {
+      "code": "AD",
+      "image": "https://deckofcardsapi.com/static/img/aceDiamonds.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/aceDiamonds.svg",
+        "png": "https://deckofcardsapi.com/static/img/aceDiamonds.png"
+      },
+      "value": "ACE",
+      "suit": "DIAMONDS"
+    }
+  ],
+  "remaining": 47
+}
