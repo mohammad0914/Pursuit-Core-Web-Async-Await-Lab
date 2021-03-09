@@ -24,10 +24,13 @@ describe("Index", () => {
   it("shows five cards from the retrieved deck ID when the button is clicked", () => {
     visitWithFirstDeck();
 
-    cy.get(".card")
-      .should("have.length", 5)
-      .first()
-      .should("have.attr", "src", "https://deckofcardsapi.com/static/img/2D.png");
+    cy.fixture("cards1.json").then((cardsFixture1) => {
+      cy.get(".card")
+        .should("have.length", 5)
+        .each((card, index) => {
+          cy.wrap(card).should("have.attr", "src", cardsFixture1.cards[index].image);
+        });
+    });
   });
 
   it("fetches new cards when the button is clicked again with a different count", () => {
@@ -37,9 +40,10 @@ describe("Index", () => {
 
     clickForDeck("cards2.json", 3);
 
-    cy.get(".card")
-      .should("have.length", 3)
-      .first()
-      .should("have.attr", "src", "https://deckofcardsapi.com/static/img/0C.png");
+    cy.fixture("cards2.json").then((cardsFixture2) => {
+      cy.get(".card").each((card, index) => {
+        cy.wrap(card).should("have.attr", "src", cardsFixture2.cards[index].image);
+      });
+    });
   });
 });
