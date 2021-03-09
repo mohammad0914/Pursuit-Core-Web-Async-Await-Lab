@@ -62,7 +62,7 @@ When you click the button again, you should draw five different cards.
 When we click, we should see the images of five cards, in a row, underneath our button.
 This should be familiar to you from our Dog API image rendering.
 In your button event listener, after your Axios request, loop through your five cards.
-Create `img` tags for each of them, give each a class of `.image`, set each `src` to a the card's image URL, and append them to the DOM underneath your `button` tag.
+Create `img` tags for each of them, give each a class of `.card`, set each `src` to a the card's image URL, and append them to the DOM underneath your `button` tag.
 
 Just like our Dog API project, when you click the button again, it should remove/replace each card with a new card.
 
@@ -87,3 +87,8 @@ Isn't it satisfying to mouse over all your cards now?
 - When finished, commit and push your work.
 - Make a pull request on github.
 - Submit the link to your pull request on Canvas.
+
+Note that these tests use [Cypress fixtures](https://docs.cypress.io/api/commands/fixture.html), or files that are used to store data used in tests.
+You can find the JSON fixtures used for network responses under `cypress/fixtures`.
+
+> Tip: see how the data stored in those `.json` files corresponds to what's used in tests.

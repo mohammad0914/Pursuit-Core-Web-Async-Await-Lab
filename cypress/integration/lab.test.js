@@ -8,7 +8,7 @@ const clickForDeck = (fixture, count = 5) => {
 const visitWithFirstDeck = () => {
   cy.intercept("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1", {
     deck_id: deckId,
-  }).as("newDeck");
+  });
 
   cy.visit("./index.html");
 
@@ -33,7 +33,7 @@ describe("Index", () => {
   it("fetches new cards when the button is clicked again with a different count", () => {
     visitWithFirstDeck();
 
-    cy.get('select').select('3')
+    cy.get("select").select("3");
 
     clickForDeck("cards2.json", 3);
 
