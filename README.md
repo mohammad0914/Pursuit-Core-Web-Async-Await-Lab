@@ -24,7 +24,7 @@ Today, we're going to create an app that does these things:
 - Displays those cards to the user.
 - When the user clicks the button again, draws another set of cards from that same deck.
 
-![Gif showing drawing 5 cards, then 4, then 1, then 5 again](https://user-images.githubusercontent.com/3335181/110512776-82739600-80d3-11eb-8b97-41b32e0d929c.gif)
+![Screen recording of drawing 5 cards, then 3, then 1](https://user-images.githubusercontent.com/3335181/110704658-46b7f980-81c3-11eb-9acb-8335f483daf3.gif)
 
 Let's break this down into smaller problems, shall we?
 
