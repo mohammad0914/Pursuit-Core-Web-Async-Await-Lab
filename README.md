@@ -68,6 +68,8 @@ Create `img` tags for each of them, give each a class of `.card`, set each `src`
 
 Just like our Dog API project, when you click the button again, it should remove/replace each card with a new card.
 
+Also, add a `p` with ID `"#remaining"` below the cards that says _`N card(s) left`_, where `N` is the `remaining` property returned to you by the API.
+
 ### Drawing More or Fewer Cards
 
 Create a `select` tag underneath your `button`.

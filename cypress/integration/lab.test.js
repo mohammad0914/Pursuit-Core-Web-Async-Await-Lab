@@ -21,6 +21,11 @@ describe("Index", () => {
     cy.get("select").should("have.value", 5);
   });
 
+  it("starts the deck out with 52 card(s) left", () => {
+    cy.visit("./index.html");
+    cy.get("#remaining").should("have.text", "52 card(s) left.");
+  });
+
   it("shows five cards from the retrieved deck ID when the button is clicked", () => {
     visitWithFirstDeck();
 
@@ -31,6 +36,8 @@ describe("Index", () => {
           cy.wrap(card).should("have.attr", "src", cardsFixture1.cards[index].image);
         });
     });
+
+    cy.get("#remaining").should("have.text", "47 card(s) left.");
   });
 
   it("fetches new cards when the button is clicked again with a different count", () => {
@@ -45,5 +52,7 @@ describe("Index", () => {
         cy.wrap(card).should("have.attr", "src", cardsFixture2.cards[index].image);
       });
     });
+
+    cy.get("#remaining").should("have.text", "44 card(s) left.");
   });
 });
