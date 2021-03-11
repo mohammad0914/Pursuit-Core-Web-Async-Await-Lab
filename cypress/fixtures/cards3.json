@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "deck_id": "my-deck-id",
+  "cards": [
+    {
+      "code": "0S",
+      "image": "https://deckofcardsapi.com/static/img/0S.png",
+      "images": {
+        "svg": "https://deckofcardsapi.com/static/img/0S.svg",
+        "png": "https://deckofcardsapi.com/static/img/0S.png"
+      },
+      "value": "10",
+      "suit": "SPADES"
+    }
+  ],
+  "remaining": 43
+}
