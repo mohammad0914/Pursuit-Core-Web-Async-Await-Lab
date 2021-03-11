@@ -34,7 +34,7 @@ Let's break this down into smaller problems, shall we?
 When your page first loads, you should generate a new shuffled deck from the Deck of Cards API. You can look at the [Deck of Cards API documentation](https://deckofcardsapi.com/) to figure out how to make that request. Take note of the data it returns.
 
 <details>
-  <summary>Need a hint?</details>
+  <summary>Need a hint?</summary>
   The route to hit to accomplish this, according to the Deck of Cards docs, is this: `https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1`.
   Use an `async` function that `await`s the result of an Axios call to that route.
 </details>
