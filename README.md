@@ -35,12 +35,14 @@ When your page first loads, you should generate a new shuffled deck from the Dec
 
 <details>
   <summary>Need a hint?</summary>
+  
   The route to hit to accomplish this, according to the Deck of Cards docs, is this: `https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1`.
   Use an `async` function that `await`s the result of an Axios call to that route.
 </details>
 
 <details>
   <summary>Need more hints?</summary>
+
   The response from that route should give you several parameters, but the two that care about are `deck_id` and `remaining`.
   With this `deck_id`, the Deck of Cards API is going to give us five cards from _that specific deck_ when we draw them.
   If we draw another five cards, it'll draw the next five unique cards from that deck.
@@ -50,6 +52,7 @@ When your page first loads, you should generate a new shuffled deck from the Dec
 
 <details>
   <summary>Even more hints!</summary>
+  
   However, we can't query this API multiple times for that deck if we don't save it.
   Go ahead and save the deck ID in a variable and save the remaining count in another variable.
   Remember not to hard code the ID or count - **whenever the user refreshes the page, we should query the API for a new deck and save our new deck ID.**
@@ -63,6 +66,7 @@ The [Deck of Cards API documentation](https://deckofcardsapi.com/) will tell you
 
 <details>
   <summary>Need a hint?</summary>
+  
   The route for drawing five cards should look something like this: `https://deckofcardsapi.com/api/deck/~deckId~/draw/?count=5`, where `~deckId~` is the deck ID item we saved.
   
   Use Axios to query this route.
@@ -72,12 +76,14 @@ The [Deck of Cards API documentation](https://deckofcardsapi.com/) will tell you
 
 <details>
   <summary>Need more hints?</summary>
+  
   Each of these `Card` objects have a set of parameters, all of which could prove useful to us, depending on what we want to do with them: There's an `image` URL, which links to a picture of the card.
   There's a `value` and `suit` parameter, and then there's a `code` parameter with shorthand should we need it.
 </details>
 
 <details>
   <summary>Even more hints!</summary>
+  
   Create a `button` tag in your HTML.
   When you click on this `button`, you should fire your Axios request to draw five cards.
   Save the cards to a variable in your project.
@@ -93,6 +99,7 @@ When we click, we should see the images of five cards, in a row, underneath our 
 
 <details>
   <summary>Need a hint?</summary>
+  
   In your button event listener, after your Axios request, loop through your five cards.
   Create `img` tags for each of them, give each a class of `.card`, set each `src` to a the card's image URL, and append them to the DOM underneath your `button` tag.
 </details>
@@ -107,6 +114,7 @@ When the page loads, the remaining cards count should start at `52`.
 
 <details>
   <summary>Need a hint?</summary>
+  
   Whenever you draw a card, the API response contains a `remaining` property that says how many cards are left in the deck.
   When you create a deck, the API response also contains a `remaining` key.
 </details>
