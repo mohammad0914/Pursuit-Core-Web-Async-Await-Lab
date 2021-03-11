@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.1.0",
+    "cypress": "^6.4.0",
+    "cypress-terminal-report": "^3.0.1",
     "fast-glob": "^3.2.5",
     "junit-report-merger": "^2.1.0",
     "junitxml-to-javascript": "^1.1.4",
