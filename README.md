@@ -15,7 +15,7 @@
 ## Lab: Five (or more, or less) Card Draw
 
 Today, we're going to be working with the [Deck of Cards API](https://deckofcardsapi.com/).
-It's a foundational skill for us, as programmers, to learn how any particular API works from some time testing it out, so take 15 minutes or so to look at the API documentation and play around with it in Postman.
+It's a foundational skill for us, as programmers, to learn how any particular API works from some time testing it out, so take 15 minutes or so to look at the API documentation and play around with it in Insomnia.
 
 Today, we're going to create an app that does these things:
 
