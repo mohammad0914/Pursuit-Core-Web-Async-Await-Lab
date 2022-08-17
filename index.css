@@ -1,0 +1,11 @@
+body {
+    background-color: lightgreen;
+}
+
+div {
+    background-color: darkgreen;
+}
+
+.cardsimage:hover {
+    transform: scale(1.1);
+}

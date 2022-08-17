@@ -2,22 +2,24 @@
 
 <head>
     <title>Async Await Lab</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <input type="button" id="getCards" value="Get Cards!">
-    <select name="cardsNumber" id="cardsnumber">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select><br>
-    <section id="cardsimage">
+    <div>
+        <input type="button" id="getCards" value="Get Cards!">
+        <select name="cardsNumber" id="cardsnumber">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+        </select><br>
+        <section id="cardsimage">
 
-    </section>
-    <p id="remainigcards">Remainig cards</p>
-
+        </section>
+        <p id="remaining">Remainig cards</p>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
 </body>
